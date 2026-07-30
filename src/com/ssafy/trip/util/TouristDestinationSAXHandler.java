@@ -35,7 +35,8 @@ public class TouristDestinationSAXHandler extends DefaultHandler {
 		if (qName.equals("record")) {
 			// complete code #04
 			// tripDto 객체를 생성(이미지 정보 세팅)하고 trips List에 추가하세요.
-			this.trips.add(new TripDto(num++));
+			tripDto = new TripDto(num++);
+			this.trips.add(tripDto);
 		}
 	}
 
@@ -56,6 +57,7 @@ public class TouristDestinationSAXHandler extends DefaultHandler {
 		} else if (qName.equals("경도")) {
 			// complete code #06
 			// 경도 항목을 처리하세요.
+			 if (temp.length() != 0)
 			tripDto.setLng(Double.parseDouble(temp));
 		} else if (qName.equals("관광지소개")) {
 			tripDto.setInfo(temp);
