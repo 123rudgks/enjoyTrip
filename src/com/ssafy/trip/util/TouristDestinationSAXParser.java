@@ -41,6 +41,7 @@ public class TouristDestinationSAXParser {
 			tripInfo = handler.getTrips();
 
 			size = tripInfo.size();
+			System.out.println("size : "+ size);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

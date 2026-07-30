@@ -234,7 +234,7 @@ public class TripInfoView {
 		}
 	}
 
-//	public static void main(String[] args) {
-//		new TripInfoView();
-//	}
+	public static void main(String[] args) {
+		new TripInfoView();
+	}
 }
