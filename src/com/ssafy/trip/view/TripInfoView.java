@@ -197,7 +197,7 @@ public class TripInfoView {
 			}
 		};
 		
-		searchBt.addActionListener( buttonHandler );
+		searchBt.addActionListener( e -> searchTrips());
 		// 참조코드 종료
 
 		showTrips();
