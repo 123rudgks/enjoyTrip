@@ -36,6 +36,7 @@ public class TouristDestinationSAXHandler extends DefaultHandler {
 			// complete code #04
 			// tripDto 객체를 생성(이미지 정보 세팅)하고 trips List에 추가하세요.
 			tripDto = new TripDto(num++);
+			tripDto.setImg(String.format("image%02d.jpg", (tripDto.getNum() % 11) + 1));
 			this.trips.add(tripDto);
 		}
 	}
