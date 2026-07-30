@@ -34,7 +34,6 @@ public class TripServiceImpl implements TripService {
 	 */
 	@Override
 	public TripDto search(int num) {
-
 		// complete code #02
 		// null 을 return 하면 안됩니다. Dao Layer 의 적절한 method를 호출하여 Business Logic 을 완성하세요.
 
